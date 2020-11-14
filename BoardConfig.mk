@@ -11,9 +11,12 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/amazon/karnak
 TARGET_KERNEL_CONFIG := karnak_defconfig
 TARGET_KERNEL_VARIANT_CONFIG :=karnak_defconfig
-TARGET_KERNEL_CROSS_COMPILE_PREFIX :=  /build/android/nougat/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := /mnt/Storage3/ROMS/halium/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := karnak
 
 TARGET_BOOTLOADER_BOARD_NAME := karnak
+
+# Ubuntu Stuffs
+BOARD_KERNEL_CMDLINE += console=tty0
