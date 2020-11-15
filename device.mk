@@ -216,7 +216,6 @@ include $(LOCAL_PATH)/hidl.mk
 # System Prop
 include $(LOCAL_PATH)/system_prop.mk
 
-include vendor/amazon/BoardConfigVendor.mk
 include vendor/amazon/mt8163-vendor.mk
 
 # call dalvik heap config
