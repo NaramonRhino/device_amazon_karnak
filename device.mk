@@ -216,8 +216,8 @@ include $(LOCAL_PATH)/hidl.mk
 # System Prop
 include $(LOCAL_PATH)/system_prop.mk
 
-include vendor/amazon/karnak/karnak-vendor.mk
-include vendor/amazon/mt8163/mt8163-vendor.mk
+include vendor/amazon/BoardConfigVendor.mk
+include vendor/amazon/mt8163-vendor.mk
 
 # call dalvik heap config
 $(call inherit-product, frameworks/native/build/tablet-7in-hdpi-1024-dalvik-heap.mk)
